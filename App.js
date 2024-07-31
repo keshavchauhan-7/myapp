@@ -14,11 +14,14 @@ import ReactUseEffect2 from './hooks/ReactUseEffect2'
 import ShowHide from './hooks/ShowHide'
 import UseEffectunmount from './hooks/UseEffectunmount'
 import ReactResponsive from './components/ReactResponsive'
+import ReactTouchableHighlight from './components/ReactTouchableHighlight'
+import ReactRadioButton from './components/ReactRadioButton'
+import ReactActivityIndicator from './components/ReactActivityIndicator'
 
 const App = () => {
 
   return (
-    <View>
+    <View style={{flex:1}}>
       {/* <ReactState/> */}
 
       {/* <ReactProps /> */}
@@ -45,7 +48,13 @@ const App = () => {
 
       {/* <UseEffectunmount/> */}
 
-      <ReactResponsive/>
+      {/* <ReactResponsive/> */}
+
+      {/* <ReactTouchableHighlight/> */}
+
+      {/* <ReactRadioButton/> */}
+
+      <ReactActivityIndicator/>
     </View>
   )
 }
