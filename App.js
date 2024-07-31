@@ -13,6 +13,7 @@ import ReactUseEffect from './hooks/ReactUseEffect'
 import ReactUseEffect2 from './hooks/ReactUseEffect2'
 import ShowHide from './hooks/ShowHide'
 import UseEffectunmount from './hooks/UseEffectunmount'
+import ReactResponsive from './components/ReactResponsive'
 
 const App = () => {
 
@@ -42,8 +43,9 @@ const App = () => {
 
       {/* <ShowHide/> */}
 
-      <UseEffectunmount/>
+      {/* <UseEffectunmount/> */}
 
+      <ReactResponsive/>
     </View>
   )
 }
