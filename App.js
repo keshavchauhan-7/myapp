@@ -17,6 +17,8 @@ import ReactResponsive from './components/ReactResponsive'
 import ReactTouchableHighlight from './components/ReactTouchableHighlight'
 import ReactRadioButton from './components/ReactRadioButton'
 import ReactActivityIndicator from './components/ReactActivityIndicator'
+import ReactModal from './components/ReactModal'
+import ReactPressable from './components/ReactPressable'
 
 const App = () => {
 
@@ -54,7 +56,11 @@ const App = () => {
 
       {/* <ReactRadioButton/> */}
 
-      <ReactActivityIndicator/>
+      {/* <ReactActivityIndicator/> */}
+
+      {/* <ReactModal/> */}
+
+      <ReactPressable/>
     </View>
   )
 }
