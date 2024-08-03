@@ -20,6 +20,7 @@ import ReactActivityIndicator from './components/ReactActivityIndicator'
 import ReactModal from './components/ReactModal'
 import ReactPressable from './components/ReactPressable'
 import ReactStatusBar from './components/ReactStatusBar'
+import ReactPlatform from './components/ReactPlatform'
 
 const App = () => {
 
@@ -63,7 +64,9 @@ const App = () => {
 
       {/* <ReactPressable/> */}
 
-      <ReactStatusBar/>
+      {/* <ReactStatusBar/> */}
+
+      <ReactPlatform/>
     </View>
   )
 }
