@@ -23,6 +23,7 @@ import ReactStatusBar from './components/ReactStatusBar'
 import ReactPlatform from './components/ReactPlatform'
 import ReactWebview from './components/ReactWebview'
 import ReactCustomModal from './components/ReactCustomModal'
+import ReactStackNavigation from './components/ReactStackNavigation'
 
 const App = () => {
 
@@ -72,7 +73,9 @@ const App = () => {
 
       {/* <ReactWebview/> */}
 
-      <ReactCustomModal/>
+      {/* <ReactCustomModal/> */}
+
+      <ReactStackNavigation/>
     </View>
   )
 }
