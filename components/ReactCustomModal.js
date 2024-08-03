@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
     },
     body: {
         backgroundColor: 'white',
-        height: 300,
+        height: 200,
         width: 300,
         padding: 20,
         justifyContent: 'flex-end',
-        borderRadius: 10
+        borderRadius: 20
     }
 })
 
