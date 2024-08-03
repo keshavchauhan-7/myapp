@@ -21,6 +21,8 @@ import ReactModal from './components/ReactModal'
 import ReactPressable from './components/ReactPressable'
 import ReactStatusBar from './components/ReactStatusBar'
 import ReactPlatform from './components/ReactPlatform'
+import ReactWebview from './components/ReactWebview'
+import ReactCustomModal from './components/ReactCustomModal'
 
 const App = () => {
 
@@ -66,7 +68,11 @@ const App = () => {
 
       {/* <ReactStatusBar/> */}
 
-      <ReactPlatform/>
+      {/* <ReactPlatform/> */}
+
+      {/* <ReactWebview/> */}
+
+      <ReactCustomModal/>
     </View>
   )
 }

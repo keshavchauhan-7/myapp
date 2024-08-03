@@ -2,7 +2,7 @@ import { Button, Modal, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
 
 const ReactModal = () => {
-    const[show,setShow] = useState(false)
+    const [show, setShow] = useState(false)
     return (
         <View style={styles.main}>
             <Modal
@@ -13,12 +13,12 @@ const ReactModal = () => {
                 <View style={styles.centeredView}>
                     <View style={styles.modalView}>
                         <Text style={styles.modalText}>Hello Code Step by Step</Text>
-                        <Button title='close modal' onPress={()=>setShow(false)} />
+                        <Button title='close modal' onPress={() => setShow(false)} />
                     </View>
                 </View>
             </Modal>
 
-            <View style={styles.buttonView}><Button title='open modal' onPress={()=>setShow(true)} /></View>
+            <View style={styles.buttonView}><Button title='open modal' onPress={() => setShow(true)} /></View>
         </View>
     )
 }
