@@ -2,6 +2,8 @@ import React from 'react'
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { Home } from './Home'
+import { Login } from './Login'
 
 const Stack = createNativeStackNavigator();
 const ReactStackNavigation = () => {
@@ -40,7 +42,6 @@ const ReactStackNavigation = () => {
         </NavigationContainer>
     )
 }
-
 const Header = () => {
     return (
         // <Button title='btn'/>
@@ -48,22 +49,9 @@ const Header = () => {
     )
 }
 
-const Home = () => {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ fontSize: 30 }}>Home Screen</Text>
-        </View>
-    )
-}
 
-const Login = (props) => {
-    return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text style={{ fontSize: 30 }}>Login Screen</Text>
-            <Button title='go to home' onPress={() => props.navigation.navigate("Home")} />
-        </View>
-    )
-}
+
+
 
 const styles = StyleSheet.create({})
 
