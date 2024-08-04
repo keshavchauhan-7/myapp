@@ -7,8 +7,29 @@ const Stack = createNativeStackNavigator();
 const ReactStackNavigation = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Login" component={Login} />
+            <Stack.Navigator
+                screenOptions={{
+                    headerStyle: {
+                        backgroundColor: '#f4511e',
+                    },
+                    headerTitleStyle: {
+                        color: '#fff',
+                        fontSize: 25
+                    }
+                }}
+            >
+                <Stack.Screen name="Login" component={Login}
+                    options={{
+                        title: 'User Login',
+                        headerStyle: {
+                            backgroundColor: 'skyblue',
+                        },
+                        headerTitleStyle: {
+                            color: 'gray',
+                            fontSize: 25
+                        }
+                    }}
+                />
                 <Stack.Screen name="Home" component={Home} />
             </Stack.Navigator>
         </NavigationContainer>
@@ -27,7 +48,7 @@ const Login = (props) => {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
             <Text style={{ fontSize: 30 }}>Login Screen</Text>
-            <Button title='go to home' onPress={()=> props.navigation.navigate("Home")}/>
+            <Button title='go to home' onPress={() => props.navigation.navigate("Home")} />
         </View>
     )
 }
