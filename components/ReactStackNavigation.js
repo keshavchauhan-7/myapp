@@ -1,10 +1,13 @@
-import { Button, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const Stack = createNativeStackNavigator();
 const ReactStackNavigation = () => {
+    const btnAction = () => {
+        console.warn('Button clicked')
+    }
     return (
         <NavigationContainer>
             <Stack.Navigator
@@ -20,6 +23,8 @@ const ReactStackNavigation = () => {
             >
                 <Stack.Screen name="Login" component={Login}
                     options={{
+                        headerTitle: () => <Button title='Left' onPress={btnAction} />,
+                        headerRight: () => <Header />,
                         title: 'User Login',
                         headerStyle: {
                             backgroundColor: 'skyblue',
@@ -33,6 +38,13 @@ const ReactStackNavigation = () => {
                 <Stack.Screen name="Home" component={Home} />
             </Stack.Navigator>
         </NavigationContainer>
+    )
+}
+
+const Header = () => {
+    return (
+        // <Button title='btn'/>
+        <TextInput placeholder='Enter Name' />
     )
 }
 
