@@ -24,6 +24,7 @@ import ReactPlatform from './components/ReactPlatform'
 import ReactWebview from './components/ReactWebview'
 import ReactCustomModal from './components/ReactCustomModal'
 import ReactStackNavigation from './components/ReactStackNavigation'
+import ReactTabNavigation from './components/ReactTabNavigation'
 
 const App = () => {
 
@@ -75,7 +76,9 @@ const App = () => {
 
       {/* <ReactCustomModal/> */}
 
-      <ReactStackNavigation/>
+      {/* <ReactStackNavigation/> */}
+
+      <ReactTabNavigation/>
     </View>
   )
 }
