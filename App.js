@@ -28,6 +28,7 @@ import ReactTabNavigation from './components/ReactTabNavigation'
 import ReactApiCall from './components/ReactApiCall'
 import ListApiCall from './components/ListApiCall'
 import FlatListApiData from './components/FlatListApiData'
+import CallJsonServerApi from './components/CallJsonServerApi'
 
 const App = () => {
 
@@ -87,7 +88,9 @@ const App = () => {
 
       {/* <ListApiCall /> */}
 
-      <FlatListApiData/>
+      {/* <FlatListApiData/> */}
+
+      <CallJsonServerApi/>
     </View>
   )
 }
