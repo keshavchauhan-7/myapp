@@ -29,6 +29,7 @@ import ReactApiCall from './components/ReactApiCall'
 import ListApiCall from './components/ListApiCall'
 import FlatListApiData from './components/FlatListApiData'
 import CallJsonServerApi from './components/CallJsonServerApi'
+import PostApiCall from './components/PostApiCall'
 
 const App = () => {
 
@@ -90,7 +91,9 @@ const App = () => {
 
       {/* <FlatListApiData/> */}
 
-      <CallJsonServerApi/>
+      {/* <CallJsonServerApi/> */}
+
+      <PostApiCall/>
     </View>
   )
 }

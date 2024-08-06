@@ -33,6 +33,7 @@ const CallJsonServerApi = () => {
     )
 }
 
-export default CallJsonServerApi
 
 const styles = StyleSheet.create({})
+
+export default CallJsonServerApi
