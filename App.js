@@ -25,11 +25,14 @@ import ReactWebview from './components/ReactWebview'
 import ReactCustomModal from './components/ReactCustomModal'
 import ReactStackNavigation from './components/ReactStackNavigation'
 import ReactTabNavigation from './components/ReactTabNavigation'
+import ReactApiCall from './components/ReactApiCall'
+import ListApiCall from './components/ListApiCall'
+import FlatListApiData from './components/FlatListApiData'
 
 const App = () => {
 
   return (
-    <View style={{flex:1}}>
+    <View style={{ flex: 1 }}>
       {/* <ReactState/> */}
 
       {/* <ReactProps /> */}
@@ -78,7 +81,13 @@ const App = () => {
 
       {/* <ReactStackNavigation/> */}
 
-      <ReactTabNavigation/>
+      {/* <ReactTabNavigation/> */}
+
+      {/* <ReactApiCall/> */}
+
+      {/* <ListApiCall /> */}
+
+      <FlatListApiData/>
     </View>
   )
 }
