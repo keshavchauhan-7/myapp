@@ -94,9 +94,9 @@ const App = () => {
 
       {/* <CallJsonServerApi/> */}
 
-      {/* <PostApiCall/> */}
+      <PostApiCall/>
 
-      <InputFieldApi/>
+      {/* <InputFieldApi/> */}
     </View>
   )
 }

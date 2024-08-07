@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 
 const CallJsonServerApi = () => {
@@ -14,7 +14,7 @@ const CallJsonServerApi = () => {
         getAPIData();
     }, [])
     return (
-        <View>
+        <ScrollView>
             <Text style={{ fontSize: 24, textAlign: 'center' }}>CallJsonServerApi</Text>
             {
                 data.length ?
@@ -29,7 +29,7 @@ const CallJsonServerApi = () => {
                         )
                     }) : null
             }
-        </View>
+        </ScrollView>
     )
 }
 
