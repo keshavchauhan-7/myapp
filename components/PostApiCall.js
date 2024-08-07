@@ -6,9 +6,9 @@ const PostApiCall = () => {
     const saveApiData = async () => {
 
         const data = {
-            "name": "abc",
-            "age": 31,
-            "email": "abc@mail"
+            "name": "naam likho",
+            "age": 55,
+            "email": "naam@mail"
         }
 
         const url = "http://10.0.2.2:3000/users"

@@ -31,6 +31,7 @@ import FlatListApiData from './components/FlatListApiData'
 import CallJsonServerApi from './components/CallJsonServerApi'
 import PostApiCall from './components/PostApiCall'
 import InputFieldApi from './components/InputFieldApi'
+import ReactFormValidation from './components/ReactFormValidation'
 
 const App = () => {
 
@@ -94,9 +95,11 @@ const App = () => {
 
       {/* <CallJsonServerApi/> */}
 
-      <PostApiCall/>
+      {/* <PostApiCall/> */}
 
       {/* <InputFieldApi/> */}
+
+      <ReactFormValidation/>
     </View>
   )
 }
