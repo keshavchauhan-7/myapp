@@ -32,6 +32,7 @@ import CallJsonServerApi from './components/CallJsonServerApi'
 import PostApiCall from './components/PostApiCall'
 import InputFieldApi from './components/InputFieldApi'
 import ReactFormValidation from './components/ReactFormValidation'
+import ListApiData from './components/ListApiData'
 
 const App = () => {
 
@@ -99,7 +100,9 @@ const App = () => {
 
       {/* <InputFieldApi/> */}
 
-      <ReactFormValidation/>
+      {/* <ReactFormValidation/> */}
+
+      <ListApiData/>
     </View>
   )
 }
