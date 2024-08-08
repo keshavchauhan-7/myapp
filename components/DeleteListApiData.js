@@ -1,7 +1,7 @@
-import { Button, StyleSheet, Text, View } from 'react-native'
 import React, { useState } from 'react'
+import { Button, StyleSheet, Text, View } from 'react-native'
 
-const ListApiData = () => {
+const DeleteListApiData = () => {
 
     const [data, setData] = useState([]);
 
@@ -11,6 +11,18 @@ const ListApiData = () => {
         result = await result.json();
         if (result) {
             setData(result);
+        }
+    }
+
+    const deleteUser = async (id) => {
+        const url = "http://10.0.2.2:3000/users";
+        let result = await fetch(`${url}/${id}`, {
+            method: "delete"
+        });
+        result = await result.json();
+        if (result) {
+            console.warn('user deleted')
+            getApiData();
         }
     }
 
@@ -31,7 +43,7 @@ const ListApiData = () => {
                     data.map((item) => <View style={styles.dataWrapper}>
                         <View style={{ flex: 1 }}><Text>{item.name}</Text></View>
                         <View style={{ flex: 1 }}><Text>{item.age}</Text></View>
-                        <View style={{ flex: 1 }}><Button title='Delete' /></View>
+                        <View style={{ flex: 1, marginHorizontal: 5 }}><Button onPress={() => deleteUser(item.id)} title='Delete' color={"red"} /></View>
                         <View style={{ flex: 1 }}><Button title='Update' /></View>
                     </View>)
                     : null
@@ -47,10 +59,13 @@ const styles = StyleSheet.create({
     dataWrapper: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor: 'orange',
+        backgroundColor: 'white',
+        shadowColor: '#000',
+        elevation: 5,
+        borderRadius: 5,
         margin: 5,
-        padding: 8
+        padding: 8,
     }
 })
 
-export default ListApiData
+export default DeleteListApiData
