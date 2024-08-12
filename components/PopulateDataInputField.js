@@ -94,7 +94,7 @@ const UserModal = (props) => {
             body: JSON.stringify({ name, age, email })
         });
         result = await result.json();
-        if(result){
+        if (result) {
             console.log(result);
             props.getApiData();
             props.setShowModal(false);

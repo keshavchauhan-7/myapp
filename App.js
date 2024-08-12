@@ -35,6 +35,7 @@ import ReactFormValidation from './components/ReactFormValidation'
 import DeleteListApiData from './components/DeleteListApiData'
 import UpdateListApiData from './components/UpdateListApiData'
 import PopulateDataInputField from './components/PopulateDataInputField'
+import ReactSearchApi from './components/ReactSearchApi'
 
 const App = () => {
 
@@ -108,7 +109,9 @@ const App = () => {
 
       {/* <UpdateListApiData/> */}
 
-      <PopulateDataInputField/>
+      {/* <PopulateDataInputField/> */}
+
+      <ReactSearchApi/>
 
     </View>
   )
