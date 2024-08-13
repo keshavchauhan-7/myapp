@@ -36,6 +36,8 @@ import DeleteListApiData from './components/DeleteListApiData'
 import UpdateListApiData from './components/UpdateListApiData'
 import PopulateDataInputField from './components/PopulateDataInputField'
 import ReactSearchApi from './components/ReactSearchApi'
+import ReactRef from './components/ReactRef'
+import ReactAsyncStorage from './components/ReactAsyncStorage'
 
 const App = () => {
 
@@ -111,7 +113,11 @@ const App = () => {
 
       {/* <PopulateDataInputField/> */}
 
-      <ReactSearchApi/>
+      {/* <ReactSearchApi/> */}
+
+      {/* <ReactRef/> */}
+
+      <ReactAsyncStorage/>
 
     </View>
   )
