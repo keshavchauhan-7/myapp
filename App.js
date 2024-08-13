@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, ScrollView } from 'react-native'
 import ReactState from './components/ReactState'
 import ReactProps from './components/ReactProps'
 import ReactTextInput from './components/ReactTextInput'
@@ -38,8 +38,31 @@ import PopulateDataInputField from './components/PopulateDataInputField'
 import ReactSearchApi from './components/ReactSearchApi'
 import ReactRef from './components/ReactRef'
 import ReactAsyncStorage from './components/ReactAsyncStorage'
+import Header from './components/Header'
+import Product from './components/Product'
 
 const App = () => {
+
+  const products = [
+    {
+      name:'Samsung Mobile',
+      color:'white',
+      price:30000,
+      image:'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
+    },
+    {
+      name:'Apple Phone',
+      color:'black',
+      price:130000,
+      image:'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
+    },
+    {
+      name:'Nokia Mobile',
+      color:'green',
+      price:20000,
+      image:'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
+    }
+  ]
 
   return (
     <View style={{ flex: 1 }}>
@@ -117,7 +140,15 @@ const App = () => {
 
       {/* <ReactRef/> */}
 
-      <ReactAsyncStorage/>
+      {/* <ReactAsyncStorage/> */}
+
+      <Header/>
+
+      <ScrollView>
+      {
+        products.map((item)=><Product item={item}/>)
+      }
+      </ScrollView>
 
     </View>
   )
