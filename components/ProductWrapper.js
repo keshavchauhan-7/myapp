@@ -6,18 +6,21 @@ import Product from './Product'
 const ProductWrapper = ({navigation}) => {
     const products = [
         {
+            id: 1,
             name: 'Samsung Mobile',
             color: 'white',
             price: 30000,
             image: 'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
         },
         {
+            id: 2,
             name: 'Apple Phone',
             color: 'black',
             price: 130000,
             image: 'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
         },
         {
+            id: 3,
             name: 'Nokia Mobile',
             color: 'green',
             price: 20000,
@@ -44,7 +47,5 @@ const ProductWrapper = ({navigation}) => {
 const style = StyleSheet.create({
 
 })
-
-
 
 export default ProductWrapper;
