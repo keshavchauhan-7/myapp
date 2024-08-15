@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, ScrollView } from 'react-native'
+import { View} from 'react-native'
 import ReactState from './components/ReactState'
 import ReactProps from './components/ReactProps'
 import ReactTextInput from './components/ReactTextInput'
@@ -38,120 +38,107 @@ import PopulateDataInputField from './components/PopulateDataInputField'
 import ReactSearchApi from './components/ReactSearchApi'
 import ReactRef from './components/ReactRef'
 import ReactAsyncStorage from './components/ReactAsyncStorage'
-import Header from './components/Header'
-import Product from './components/Product'
+import {NavigationContainer} from '@react-navigation/native'
+import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import ProductWrapper from './components/ProductWrapper'
+import UserList from './components/UserList'
+
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
 
-  const products = [
-    {
-      name:'Samsung Mobile',
-      color:'white',
-      price:30000,
-      image:'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
-    },
-    {
-      name:'Apple Phone',
-      color:'black',
-      price:130000,
-      image:'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
-    },
-    {
-      name:'Nokia Mobile',
-      color:'green',
-      price:20000,
-      image:'https://media.istockphoto.com/id/1840192421/photo/smartphone-template-with-blank-screen-on-white-background.webp?b=1&s=170667a&w=0&k=20&c=Nnf-jxIKiC-uYc3LHL-KVxiRnGhnal-97adjzRSw-m4='
-    }
-  ]
-
   return (
-    <View style={{ flex: 1 }}>
-      {/* <ReactState/> */}
 
-      {/* <ReactProps /> */}
 
-      {/* <ReactTextInput/> */}
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={ProductWrapper} />
+        <Stack.Screen name="User" component={UserList} />
+      </Stack.Navigator>
+    </NavigationContainer>
 
-      {/* <ReactForm/> */}
 
-      {/* <ReactList/> */}
 
-      {/* <ReactMapList/> */}
+    
+    // <View style={{ flex: 1 }}>
+    //   {/* <ReactState/> */}
 
-      {/* <ReactGrid/> */}
+    //   {/* <ReactProps /> */}
 
-      {/* <ComponentLoopFlatList/> */}
+    //   {/* <ReactTextInput/> */}
 
-      {/* <ReactSectionList /> */}
+    //   {/* <ReactForm/> */}
 
-      {/* <ReactUseEffect/> */}
+    //   {/* <ReactList/> */}
 
-      {/* <ReactUseEffect2/> */}
+    //   {/* <ReactMapList/> */}
 
-      {/* <ShowHide/> */}
+    //   {/* <ReactGrid/> */}
 
-      {/* <UseEffectunmount/> */}
+    //   {/* <ComponentLoopFlatList/> */}
 
-      {/* <ReactResponsive/> */}
+    //   {/* <ReactSectionList /> */}
 
-      {/* <ReactTouchableHighlight/> */}
+    //   {/* <ReactUseEffect/> */}
 
-      {/* <ReactRadioButton/> */}
+    //   {/* <ReactUseEffect2/> */}
 
-      {/* <ReactActivityIndicator/> */}
+    //   {/* <ShowHide/> */}
 
-      {/* <ReactModal/> */}
+    //   {/* <UseEffectunmount/> */}
 
-      {/* <ReactPressable/> */}
+    //   {/* <ReactResponsive/> */}
 
-      {/* <ReactStatusBar/> */}
+    //   {/* <ReactTouchableHighlight/> */}
 
-      {/* <ReactPlatform/> */}
+    //   {/* <ReactRadioButton/> */}
 
-      {/* <ReactWebview/> */}
+    //   {/* <ReactActivityIndicator/> */}
 
-      {/* <ReactCustomModal/> */}
+    //   {/* <ReactModal/> */}
 
-      {/* <ReactStackNavigation/> */}
+    //   {/* <ReactPressable/> */}
 
-      {/* <ReactTabNavigation/> */}
+    //   {/* <ReactStatusBar/> */}
 
-      {/* <ReactApiCall/> */}
+    //   {/* <ReactPlatform/> */}
 
-      {/* <ListApiCall /> */}
+    //   {/* <ReactWebview/> */}
 
-      {/* <FlatListApiData/> */}
+    //   {/* <ReactCustomModal/> */}
 
-      {/* <CallJsonServerApi/> */}
+    //   {/* <ReactStackNavigation/> */}
 
-      {/* <PostApiCall/> */}
+    //   {/* <ReactTabNavigation/> */}
 
-      {/* <InputFieldApi/> */}
+    //   {/* <ReactApiCall/> */}
 
-      {/* <ReactFormValidation/> */}
+    //   {/* <ListApiCall /> */}
 
-      {/* <DeleteListApiData/> */}
+    //   {/* <FlatListApiData/> */}
 
-      {/* <UpdateListApiData/> */}
+    //   {/* <CallJsonServerApi/> */}
 
-      {/* <PopulateDataInputField/> */}
+    //   {/* <PostApiCall/> */}
 
-      {/* <ReactSearchApi/> */}
+    //   {/* <InputFieldApi/> */}
 
-      {/* <ReactRef/> */}
+    //   {/* <ReactFormValidation/> */}
 
-      {/* <ReactAsyncStorage/> */}
+    //   {/* <DeleteListApiData/> */}
 
-      <Header/>
-      
+    //   {/* <UpdateListApiData/> */}
 
-      <ScrollView>
-      {
-        products.map((item)=><Product item={item}/>)
-      }
-      </ScrollView>
+    //   {/* <PopulateDataInputField/> */}
 
-    </View>
+    //   {/* <ReactSearchApi/> */}
+
+    //   {/* <ReactRef/> */}
+
+    //   {/* <ReactAsyncStorage/> */}
+
+    // </View>
   )
 }
 
