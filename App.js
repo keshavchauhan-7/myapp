@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View} from 'react-native'
+import { View } from 'react-native'
 import ReactState from './components/ReactState'
 import ReactProps from './components/ReactProps'
 import ReactTextInput from './components/ReactTextInput'
@@ -38,8 +38,8 @@ import PopulateDataInputField from './components/PopulateDataInputField'
 import ReactSearchApi from './components/ReactSearchApi'
 import ReactRef from './components/ReactRef'
 import ReactAsyncStorage from './components/ReactAsyncStorage'
-import {NavigationContainer} from '@react-navigation/native'
-import {createNativeStackNavigator} from '@react-navigation/native-stack'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import ProductWrapper from './components/ProductWrapper'
 import UserList from './components/UserList'
 
@@ -50,95 +50,92 @@ const App = () => {
 
   return (
 
+    <View style={{ flex: 1 }}>
 
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={ProductWrapper} />
-        <Stack.Screen name="User" component={UserList} />
-      </Stack.Navigator>
-    </NavigationContainer>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Home" component={ProductWrapper} />
+          <Stack.Screen name="User" component={UserList} />
+        </Stack.Navigator>
+      </NavigationContainer>
 
+      {/* <ReactState/> */}
 
+      {/* <ReactProps /> */}
 
-    
-    // <View style={{ flex: 1 }}>
-    //   {/* <ReactState/> */}
+      {/* <ReactTextInput/> */}
 
-    //   {/* <ReactProps /> */}
+      {/* <ReactForm/> */}
 
-    //   {/* <ReactTextInput/> */}
+      {/* <ReactList/> */}
 
-    //   {/* <ReactForm/> */}
+      {/* <ReactMapList/> */}
 
-    //   {/* <ReactList/> */}
+      {/* <ReactGrid/> */}
 
-    //   {/* <ReactMapList/> */}
+      {/* <ComponentLoopFlatList/> */}
 
-    //   {/* <ReactGrid/> */}
+      {/* <ReactSectionList /> */}
 
-    //   {/* <ComponentLoopFlatList/> */}
+      {/* <ReactUseEffect/> */}
 
-    //   {/* <ReactSectionList /> */}
+      {/* <ReactUseEffect2/> */}
 
-    //   {/* <ReactUseEffect/> */}
+      {/* <ShowHide/> */}
 
-    //   {/* <ReactUseEffect2/> */}
+      {/* <UseEffectunmount/> */}
 
-    //   {/* <ShowHide/> */}
+      {/* <ReactResponsive/> */}
 
-    //   {/* <UseEffectunmount/> */}
+      {/* <ReactTouchableHighlight/> */}
 
-    //   {/* <ReactResponsive/> */}
+      {/* <ReactRadioButton/> */}
 
-    //   {/* <ReactTouchableHighlight/> */}
+      {/* <ReactActivityIndicator/> */}
 
-    //   {/* <ReactRadioButton/> */}
+      {/* <ReactModal/> */}
 
-    //   {/* <ReactActivityIndicator/> */}
+      {/* <ReactPressable/> */}
 
-    //   {/* <ReactModal/> */}
+      {/* <ReactStatusBar/> */}
 
-    //   {/* <ReactPressable/> */}
+      {/* <ReactPlatform/> */}
 
-    //   {/* <ReactStatusBar/> */}
+      {/* <ReactWebview/> */}
 
-    //   {/* <ReactPlatform/> */}
+      {/* <ReactCustomModal/> */}
 
-    //   {/* <ReactWebview/> */}
+      {/* <ReactStackNavigation/> */}
 
-    //   {/* <ReactCustomModal/> */}
+      {/* <ReactTabNavigation/> */}
 
-    //   {/* <ReactStackNavigation/> */}
+      {/* <ReactApiCall/> */}
 
-    //   {/* <ReactTabNavigation/> */}
+      {/* <ListApiCall /> */}
 
-    //   {/* <ReactApiCall/> */}
+      {/* <FlatListApiData/> */}
 
-    //   {/* <ListApiCall /> */}
+      {/* <CallJsonServerApi/> */}
 
-    //   {/* <FlatListApiData/> */}
+      {/* <PostApiCall/> */}
 
-    //   {/* <CallJsonServerApi/> */}
+      {/* <InputFieldApi/> */}
 
-    //   {/* <PostApiCall/> */}
+      {/* <ReactFormValidation/> */}
 
-    //   {/* <InputFieldApi/> */}
+      {/* <DeleteListApiData/> */}
 
-    //   {/* <ReactFormValidation/> */}
+      {/* <UpdateListApiData/> */}
 
-    //   {/* <DeleteListApiData/> */}
+      {/* <PopulateDataInputField/> */}
 
-    //   {/* <UpdateListApiData/> */}
+      {/* <ReactSearchApi/> */}
 
-    //   {/* <PopulateDataInputField/> */}
+      {/* <ReactRef/> */}
 
-    //   {/* <ReactSearchApi/> */}
+      {/* <ReactAsyncStorage/> */}
 
-    //   {/* <ReactRef/> */}
-
-    //   {/* <ReactAsyncStorage/> */}
-
-    // </View>
+    </View>
   )
 }
 
