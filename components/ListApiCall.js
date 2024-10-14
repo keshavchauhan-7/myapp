@@ -14,6 +14,7 @@ const ListApiCall = () => {
     useEffect(() => {
         getAPIData();
     }, [])
+
     return (
         <ScrollView>
             <Text style={{ fontSize: 24, textAlign: 'center' }}>ListApiCall</Text>
